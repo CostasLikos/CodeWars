@@ -12,6 +12,7 @@ namespace Kata
         {
             Console.WriteLine(str);
             return str == "" ? "" : string.Join("", str.Trim().Split(" ").Where(word => !string.IsNullOrWhiteSpace(word)).Select(word => char.ToUpper(word[0]) + word.Substring(1)).ToArray());
+            //you can still execute the programm with " "
         }
     }
 }
